@@ -262,7 +262,9 @@ body {
   color: #7c5315;
   width: 95%;
   background-image: url("./images/__14.jpg");
-  background-position: -10px -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .countdown {
