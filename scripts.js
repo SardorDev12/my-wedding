@@ -1,32 +1,18 @@
-let isPlaying = false;
-const audio = document.getElementById("audio");
-const playIcon = document.getElementById("play-icon");
-const form = document.getElementById("form");
+document.getElementById("play-btn").addEventListener("click", function () {
+  const audio = document.getElementById("audio");
+  const playIcon = document.getElementById("play-icon");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Jo'natildi.");
+  if (audio.paused) {
+    audio.play();
+    playIcon.src = "./images/pause.png"; // Change to pause icon
+  } else {
+    audio.pause();
+    playIcon.src = "./images/play.png"; // Change back to play icon
+  }
 });
 
-// Paths to your play and pause images
-const playImageSrc = "./images/play.png";
-const pauseImageSrc = "./images/pause.png";
-
-function togglePlay() {
-  if (isPlaying) {
-    audio.pause();
-    playIcon.src = playImageSrc; // Set the image to play icon
-  } else {
-    audio.play();
-    playIcon.src = pauseImageSrc; // Set the image to pause icon
-  }
-  isPlaying = !isPlaying;
-}
-
-// script.js
-
 // Set the target date and time to the wedding day: 28th August at 16:00
-const targetDate = new Date("October 04, 2024 18:00:00").getTime();
+const targetDate = new Date("May 03, 2025 16:00:00").getTime();
 
 // Update the countdown every second
 const countdownInterval = setInterval(() => {
