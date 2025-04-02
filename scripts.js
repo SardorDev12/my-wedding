@@ -39,3 +39,26 @@ const countdownInterval = setInterval(() => {
   document.getElementById("seconds").innerText =
     seconds < 10 ? "0" + seconds : seconds;
 }, 1000);
+
+//
+
+function createFlower() {
+  const flower = document.createElement("img");
+  flower.src = "https://cdn-icons-png.flaticon.com/512/531/531813.png";
+  flower.style.position = "fixed";
+  flower.style.width = "30px";
+  flower.style.height = "30px";
+  flower.style.left = Math.random() * window.innerWidth + "px";
+  flower.style.top = "0";
+  document.body.appendChild(flower);
+
+  gsap.to(flower, {
+    y: window.innerHeight,
+    duration: Math.random() * 10 + 5,
+    opacity: 0,
+    onComplete: () => flower.remove(),
+    ease: "linear",
+  });
+}
+
+setInterval(createFlower, 1000);
