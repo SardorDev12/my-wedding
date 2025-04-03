@@ -21,7 +21,19 @@ body {
   background: linear-gradient(to right, #7c5315, #b88055);
   width: 100%;
   height: 100px;
+  background-image: url("./images/Flower\ Header.png");
 }
+
+/* .flower-bg {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: green;
+  position: fixed;
+  left: 50%;
+  top: 6.5%;
+  transform: translate(-50%, -50%);
+} */
 
 .header-logo {
   display: flex;
