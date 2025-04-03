@@ -44,7 +44,7 @@ const countdownInterval = setInterval(() => {
 
 function createFlower() {
   const flower = document.createElement("img");
-  flower.src = "https://cdn-icons-png.flaticon.com/512/531/531813.png";
+  flower.src = "./images/rose.png";
   flower.style.position = "fixed";
   flower.style.width = "30px";
   flower.style.height = "30px";
