@@ -339,8 +339,8 @@ span {
 }
 
 .map-icon iframe {
-  width: 100%; /* Make it fill the container */
-  height: 300px; /* Adjust as needed */
+  width: 90%; /* Make it fill the container */
+  height: 150px; /* Adjust as needed */
   border: none; /* Remove default border */
 }
 
