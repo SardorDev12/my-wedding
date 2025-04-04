@@ -62,3 +62,10 @@ function createFlower() {
 }
 
 setInterval(createFlower, 1000);
+
+setTimeout(() => {
+  document.querySelector(".title.name1").classList.add("typed");
+}, 2000); // 2s = same as your typing animation duration
+setTimeout(() => {
+  document.querySelector(".title.name2").classList.add("typed");
+}, 2000); // after first finishes + delay for second
