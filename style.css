@@ -23,7 +23,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: fixed;
-  z-index: -44;
+  z-index: -1;
 }
 .flower-bottom__corners > div {
   width: 100px;
@@ -325,7 +325,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: -111;
 }
 
 .countdown {
@@ -339,6 +339,7 @@ body {
   color: #7c5315;
   transform: translate(-50%, -50%);
   font-family: "Lora", serif;
+  z-index: 0;
 }
 
 .time-section {
@@ -386,10 +387,15 @@ span {
   font-size: 1.2rem;
 }
 
+.map-icon {
+  z-index: 99;
+}
+
 .map-icon iframe {
   width: 90%;
   height: 150px;
   border: none;
+  z-index: 99;
 }
 
 .endnote {
