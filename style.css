@@ -23,6 +23,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: fixed;
+  z-index: -44;
 }
 .flower-bottom__corners > div {
   width: 100px;
@@ -386,9 +387,9 @@ span {
 }
 
 .map-icon iframe {
-  width: 90%; /* Make it fill the container */
-  height: 150px; /* Adjust as needed */
-  border: none; /* Remove default border */
+  width: 90%;
+  height: 150px;
+  border: none;
 }
 
 .endnote {
